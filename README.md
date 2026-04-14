@@ -34,7 +34,7 @@ X Layer needs high-frequency, low-gas consumer apps to drive organic activity. O
 
 The project's canonical onchain identity is an **OKX Agentic Wallet**:
 
-**`0x46243dbcdd229085a7fdb76f9427e50cccb080a2`** (owner of the deployed `PredictX` contract on X Layer Testnet)
+**`0x1660281d4d7cfa1044f6bd5b80a7a4449f683b07`** (owner of the deployed `PredictX` contract on X Layer Testnet)
 
 - **Login:** email (`onchainos wallet login <email>`) + OTP verify — no seed phrase
 - **Role in contract:** `owner` — governs resolver appointment, emergency `forceResolve`, and `voidMarket` for refunds
@@ -44,7 +44,7 @@ When multiple agents are deployed, roles are distinguished by Agentic Wallet sub
 
 | Agent | Agentic Wallet (sub-account) | Role |
 |-------|------------------------------|------|
-| Crypto Alpha Bot | `0x46243dbcdd…080a2` (Account 1) | Predicts crypto markets. Consumes `okx-dex-signal`. |
+| Crypto Alpha Bot | `0x1660281d…683b07` (Account 1) | Predicts crypto markets. Consumes `okx-dex-signal`. |
 | *(add via `onchainos wallet add`)* | *(new address)* | Specialize per domain (sports, politics, …) |
 
 ## Onchain OS skill usage
@@ -105,8 +105,8 @@ Adding more skills is straightforward — the agent-SDK shells into `onchainos`,
 
 | Component | Address / URL |
 |-----------|---------------|
-| **PredictX contract** | [`0xdb032DA5a99FF27024c4868bc8B9B3211A0fac0C`](https://www.okx.com/explorer/xlayer-test/address/0xdb032DA5a99FF27024c4868bc8B9B3211A0fac0C) on X Layer Testnet (chain 1952) |
-| **Contract owner (Agentic Wallet)** | [`0x46243dbcdd229085a7fdb76f9427e50cccb080a2`](https://www.okx.com/explorer/xlayer-test/address/0x46243dbcdd229085a7fdb76f9427e50cccb080a2) |
+| **PredictX contract** | [`0x77B5EEB3dBbE0849610FcC95B44A158906dbC623`](https://www.okx.com/explorer/xlayer-test/address/0x77B5EEB3dBbE0849610FcC95B44A158906dbC623) on X Layer Testnet (chain 1952) |
+| **Contract owner (Agentic Wallet)** | [`0x1660281d4d7cfa1044f6bd5b80a7a4449f683b07`](https://www.okx.com/explorer/xlayer-test/address/0x1660281d4d7cfa1044f6bd5b80a7a4449f683b07) |
 | **Resolver (keeper)** | `0x39cE03521d62DC579Ff6031506B08B300Daa1Eeb` (backend cron only — has no funds authority) |
 | **Frontend** | https://frontend-production-9410f.up.railway.app |
 | **Backend API** | https://backend-production-191d.up.railway.app |
@@ -156,8 +156,8 @@ Create `.env` at the repo root:
 
 ```env
 DEPLOYER_PRIVATE_KEY=0x...
-CONTRACT_ADDRESS=0xdb032DA5a99FF27024c4868bc8B9B3211A0fac0C
-AGENTIC_WALLET_ADDRESS=0x46243dbcdd229085a7fdb76f9427e50cccb080a2
+CONTRACT_ADDRESS=0x77B5EEB3dBbE0849610FcC95B44A158906dbC623
+AGENTIC_WALLET_ADDRESS=0x1660281d4d7cfa1044f6bd5b80a7a4449f683b07
 DATABASE_URL=postgres://postgres:postgres@localhost:5432/predictx
 PORT=3001
 ```
@@ -275,7 +275,7 @@ okx-predictions/
 
 ## Team
 
-- **Strong** (`strong.aptos@gmail.com`) — solo build. Full-stack engineering: contract, backend, frontend, SDK, Onchain OS integration.
+- **Strong** (`octosloans@gmail.com`) — solo build. Full-stack engineering: contract, backend, frontend, SDK, Onchain OS integration.
 
 ## Hackathon
 

@@ -2,7 +2,7 @@ import { ethers } from "hardhat";
 
 // Project's Agentic Wallet — the onchain identity that owns the contract.
 // Signed into via `onchainos wallet login <email>` / `onchainos wallet verify <code>`.
-const AGENTIC_WALLET = "0x46243dbcdd229085a7fdb76f9427e50cccb080a2";
+const AGENTIC_WALLET = "0x1660281d4d7cfa1044f6bd5b80a7a4449f683b07";
 
 async function main() {
   const [deployer] = await ethers.getSigners();
