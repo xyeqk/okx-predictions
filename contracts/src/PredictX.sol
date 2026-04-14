@@ -69,7 +69,18 @@ contract PredictX {
     modifier onlyResolver() { require(msg.sender == resolver || msg.sender == owner, "Not resolver"); _; }
     modifier noReentrant() { require(!_locked, "Reentrant"); _locked = true; _; _locked = false; }
 
-    constructor() { owner = msg.sender; resolver = msg.sender; }
+    // Owner = project's Agentic Wallet (onchain identity).
+    // Resolver = operational keeper key that executes cron-based market resolution.
+    // If _agenticOwner is zero, deployer becomes owner (for local testing).
+    constructor(address _agenticOwner) {
+        owner = _agenticOwner == address(0) ? msg.sender : _agenticOwner;
+        resolver = msg.sender;
+    }
+
+    function transferOwnership(address _newOwner) external onlyOwner {
+        require(_newOwner != address(0), "Zero owner");
+        owner = _newOwner;
+    }
 
     function setResolver(address _resolver) external onlyOwner { resolver = _resolver; }
 

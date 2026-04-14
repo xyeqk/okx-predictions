@@ -1,6 +1,6 @@
 import { BrowserProvider, Contract, parseEther } from "ethers";
 
-const CONTRACT_ADDRESS = "0x0169a7068B81DB0a1D14ecF12d5Abe26a10fB968";
+const CONTRACT_ADDRESS = "0xdb032DA5a99FF27024c4868bc8B9B3211A0fac0C";
 
 const ABI = [
   "function placeBet(uint256 _marketId, uint8 _side) external payable",
