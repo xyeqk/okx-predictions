@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #050508;
+  --color-surface: #0c0c14;
+  --color-surface-2: #13131e;
+  --color-surface-3: #1c1c2a;
+  --color-surface-4: #252535;
+  --color-border: rgba(255, 255, 255, 0.06);
+  --color-border-2: rgba(255, 255, 255, 0.1);
+  --color-text: #e8e8f0;
+  --color-text-2: #8a8a9a;
+  --color-text-3: #55556a;
+  --color-blue: #2563eb;
+  --color-blue-light: #3b82f6;
+  --color-blue-dim: rgba(37, 99, 235, 0.15);
+  --color-cyan: #06b6d4;
+  --color-green: #22c55e;
+  --color-green-dim: rgba(34, 197, 94, 0.1);
+  --color-red: #ef4444;
+  --color-red-dim: rgba(239, 68, 68, 0.1);
+  --color-purple: #8b5cf6;
+  --color-yellow: #eab308;
+  --color-pink: #ec4899;
+
+  --font-sans: 'Outfit', system-ui, sans-serif;
+  --font-heading: 'Outfit', sans-serif;
+  --font-mono: 'Inter', system-ui, sans-serif;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Nexus uses Space Grotesk for all headings, titles, bold labels */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.025em;
+}
+
+.font-display {
+  font-family: var(--font-heading);
+  letter-spacing: -0.02em;
+}
+
+/* Outfit for inputs too - consistent typography */
+input, textarea, select {
+  font-family: var(--font-sans);
+}
+
+/* Small tracking labels like "MARKET UPDATE", "TRENDING ASSETS" */
+.label-sm {
+  font-family: var(--font-heading);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--color-text-3);
+  text-transform: uppercase;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 99px; }

@@ -1,0 +1,14 @@
+node_modules/
+dist/
+build/
+.env
+*.log
+artifacts/
+cache/
+typechain-types/
+.agents/
+.claude/
+data/
+*.db
+package-lock.json
+skills-lock.json

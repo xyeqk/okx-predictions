@@ -1,0 +1,17 @@
+{
+  "name": "predictx-contracts",
+  "version": "1.0.0",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy:xlayer": "hardhat run scripts/deploy.ts --network xlayer",
+    "deploy:testnet": "hardhat run scripts/deploy.ts --network xlayerTestnet"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.22.0",
+    "dotenv": "^16.4.0",
+    "typescript": "^5.4.0",
+    "ts-node": "^10.9.0",
+    "@types/node": "^20.0.0"
+  }
+}

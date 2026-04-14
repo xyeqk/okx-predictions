@@ -1,0 +1,16 @@
+{
+  "name": "predictx-demo-agent",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npx tsx agent.ts"
+  },
+  "dependencies": {
+    "socket.io-client": "^4.7.0",
+    "axios": "^1.7.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0"
+  }
+}

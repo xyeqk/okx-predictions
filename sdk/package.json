@@ -1,0 +1,19 @@
+{
+  "name": "@predictx/agent-sdk",
+  "version": "1.0.0",
+  "description": "SDK for building PredictX prediction agents",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "example": "npx tsx example.ts"
+  },
+  "dependencies": {
+    "socket.io-client": "^4.7.0",
+    "axios": "^1.7.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0"
+  }
+}
